@@ -10,12 +10,7 @@ const log4js = require("../utils/logs");
 const loggerArchiveError = log4js.getLogger("errorArchive");
 
 const login = () => {
-  /*
-    strategySignup:
-    passport por defecto toma el username & password de req.body.username, req.body.password,
-    en nuestro modelo para ingresar a la DB tenemos también email, entonces, para obtener el
-    email indicamos que queremos recibir todo el req.
-    */
+
 
   passport.use(
     "login",
